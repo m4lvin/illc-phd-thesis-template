@@ -108,18 +108,6 @@ acs-*.bib
 *.gaux
 *.gtex
 
-# hyperref
-*.brf
-
-# knitr
-*-concordance.tex
-# TODO Comment the next line if you want to keep your tikz graphics files
-*.tikz
-*-tikzDictionary
-
-# listings
-*.lol
-
 # makeidx
 *.idx
 *.ilg
@@ -209,6 +197,7 @@ TSWLatexianTemp*
 
 # Kile
 *.backup
+*.kilepr
 
 # KBibTeX
 *~[0-9]*
@@ -218,3 +207,7 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+CHANGED.pdf
+thesis.pdf
+pages.txt

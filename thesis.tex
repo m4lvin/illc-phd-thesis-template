@@ -1,0 +1,43 @@
+\documentclass{illcdiss}
+
+\newcommand{\mytitle}{Where is my thesis?}
+\newcommand{\myshortauthor}{Momo Nobody}
+\newcommand{\mylongauthor}{Momo John Jane Nobody}
+
+\input{malvindiss}
+
+\begin{document}
+\pagestyle{plain}
+\pagenumbering{roman}
+
+\include{00_frontmatter}
+\tableofcontents
+
+% acknowledgments
+\cleardoublepage
+\include{01_acknowledgments}
+
+\cleardoublepage
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+\include{02_introduction}
+\include{03_symbols}
+\include{10_chapter1}
+\include{20_chapter2}
+\include{30_chapter3}
+\include{90_conclusion}
+
+{\emergencystretch=1em%
+\defbibnote{biblio}{\markboth{Bibliography}{Bibliography}}%
+\printbibliography[title=Bibliography,heading=bibintoc,prenote=biblio]%
+}
+
+\include{93_samenvatting} % abstract in Dutch
+
+\include{95_abstract} % abstract in English
+
+\cleardoublepage
+\include{illcdissertations}
+
+\end{document}

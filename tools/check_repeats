@@ -1,0 +1,12 @@
+#!/bin/tcsh
+#
+# This is from http://www.grapenthin.org/toolbox/check_repeats.html.
+
+echo "Checking for repeated words in a line of ${1}:"
+grep -TEin --color  "\b(\w+)\b\s*\1\b" $1
+echo " "
+
+echo "Checking for repeated words over linebreaks of ${1}:"
+awk '{printf("%s\n   %.5d - %.5d: ... %s ",$0, FNR,FNR+1, $NF)}' $1 | grep -TEi --color  "\.\.\. \b(\w+)\b\s*\1\b"
+echo " "
+echo "Done."

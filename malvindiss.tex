@@ -1,0 +1,82 @@
+% !TEX root = thesis.tex
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % better fonts
+
+\usepackage[dutch,english]{babel} % put english last to make it default!
+\usepackage{csquotes}
+
+% If you need chinese characters, uncomment this:
+% \usepackage{CJKutf8}
+% \newcommand{\mychinese}[1]{\begin{CJK*}{UTF8}{gbsn}#1\end{CJK*}}
+
+\usepackage{graphicx,soul,latexsym,mathrsfs,graphics,stmaryrd}
+\usepackage{amsfonts,amsmath,amssymb,wasysym,float,booktabs,url}
+\usepackage{microtype,etex,enumerate,setspace,xcolor,mdframed}
+\usepackage{epigraph,caption,bussproofs,tabto}
+
+% NOTE add your own \usepackage commands here
+
+\usepackage[section]{placeins}
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds,positioning,trees,shapes,arrows,patterns,topaths,calc}
+
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    natbib=true,
+    url=true,
+    maxcitenames=9,
+    maxbibnames=9,
+    abbreviate=false,
+    eprint=false,
+    backref,
+    backrefstyle=none,
+    doi=true
+]{biblatex}
+% allow line breaks in bibliogrpahy URLs, with penalty to avoid:
+\setcounter{biburlnumpenalty}{9000} % numbers
+\setcounter{biburllcpenalty}{9000}  % lower case
+\setcounter{biburlucpenalty}{9000}  % upper case
+
+\addbibresource{bibliography.bib}
+
+% load hyperref as the last package to make it compatible with others!
+\usepackage[pdftex,pdfpagelabels]{hyperref}
+\hypersetup{
+  pdfborder = {0 0 0},
+  breaklinks = true,
+  linktoc=all,
+  pdfinfo={
+    Author={\myshortauthor},
+    Title={\mytitle}
+    % NOTE fix date and time here for a reproducible build
+    % CreationDate={D:20180424180424},
+    % ModDate={D:20180424180424}
+  }
+}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\pdfsuppressptexinfo15
+
+% NEWCOMMANDS etc.
+
+\newcommand{\twopartdef}[4]{\left \{ \begin{array}{ll}#1&#2\\#3&#4\end{array} \right .}
+\newcommand{\stack}[2]{\begin{array}{c}#1\\#2\end{array}}
+\newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
+
+% some logic
+\let\lthen\rightarrow
+\let\liff\leftrightarrow
+\let\lxor\oplus
+
+% will the real phi please stand up
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\Pow}{\mathcal{P}}
+\newcommand{\Lng}{\mathcal{L}}
+\DeclareMathOperator{\quotient}{/}
+
+% NOTE add your own \newcommand list here

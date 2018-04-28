@@ -1,0 +1,121 @@
+% !TEX root = thesis.tex
+%%
+%%first of all the cover.
+{\pagestyle{empty}
+\newcommand{\printtitle}{%
+\begin{center}
+  \linespread{1.2}
+  \Huge
+  \textbf{\mytitle}
+\end{center}
+}
+\begin{titlepage}
+\par\vskip 2cm
+\begin{center}
+\printtitle
+\vfill
+{\LARGE\textbf{\myshortauthor}}
+\vskip 2cm
+\end{center}
+\end{titlepage}
+
+% Skip a page to start on a right page again.
+\mbox{}\newpage
+\setcounter{page}{1}
+
+%%the very first page: the `franse pagina'
+\par\vskip 2cm
+\printtitle
+
+%%the second page: the `illc pagina'
+\clearpage
+\par\vskip 2cm
+\begin{center}
+ILLC Dissertation Series DS-2018-XX % FIXME
+\par\vspace{2cm}
+\illclogo{10cm}
+\par\vspace{2cm}
+\noindent%
+For further information about ILLC-publications, please contact\\[2ex]
+Institute for Logic, Language and Computation\\
+Universiteit van Amsterdam\\
+Science Park 107\\
+1098 XG Amsterdam\\
+phone: +31-20-525 6051\\
+e-mail: \href{mailto:illc@uva.nl}{\texttt{illc@uva.nl}}\\
+homepage: \url{https://www.illc.uva.nl/}
+\end{center}
+\vfill
+
+%Copyright and accreditation stuff, plus ISBN
+%
+\noindent%
+% FIXME funding and grants?
+This work was financially supported by XXX.
+The author received funding from XXX Grant  .\\[4em]
+% Copyright: put your name here
+Copyright \copyright\ 20XX by XXX.\\[2ex] %FIXME
+% Cover design, if your cover was designed by someone else
+Cover design by XXX.\\[2ex] % FIXME
+%Maybe some additional info on the production of the dissertation.
+%Don't forget your printing shop
+Printed and bound by Ipskamp Printing.\\[2ex] % FIXME
+% ISBN number: ask your printing shop to obtain one for you
+% If you are with Ipskamp, you can apply for an ISBN here:
+%   https://www.proefschriften.net/en/printing-process/isbn/
+ISBN\@: 978--XX--XXX--XXXX--X % FIXME
+
+% Dedication, table of contents and acknowledgements
+% are handled in the main file
+
+%%the third page: the `titelblad'
+\clearpage
+\par\vskip 2cm
+\printtitle
+\begin{center}
+\par\vspace {6cm}
+{\large \textsc{Academisch Proefschrift}}
+\par\vspace {1cm}
+{\large ter verkrijging van de graad van doctor\\
+aan de Universiteit van Amsterdam\\
+op gezag van de Rector Magnificus\\
+prof. dr. ir. K.I.J. Maex\\ % FIXME
+ten overstaan van een door het College voor Promoties ingestelde\\
+\mbox{commissie, in het openbaar te verdedigen in de Aula der Universiteit}\\ % FIXME
+% Note: If your UvA PhD defense is located at the Agnietenkapel, simply write
+% 'te verdedigen in de Agnietenkapel \\', i.e. do not add 'der Universiteit'
+op XXXdag XXX XXX 20XX, te XX.00 uur\\ } % FIXME
+\par\vspace {1cm} {\large door}
+\par \vspace {1cm} % Note: next should be your _full_ name
+{\Large \mylongauthor}
+\par\vspace {1cm} % and your birthplace
+{\large geboren te XXX}% FIXME
+% Note: include your country of birth IF AND ONLY IF you were not born
+% in the Netherlands.
+% If you were born outside the Netherlands, you should ADD your birth country.
+% If you were born inside the Netherlands, you should OMIT your birth country.
+\end{center}
+
+%%the fourth page: committee and faculty
+\clearpage
+\noindent%
+{\textbf{Promotiecommisie}}\\
+\phantom{.} \\
+\begin{tabular}[t]{@{}llr}
+Promotor:      & Prof.~dr.~X.X.X.~van~XX        & Universiteit van Amsterdam \\ % FIXME
+Co-promotor:   & XXX                            & XXX \\
+\\
+Overige leden: & XXX                            & XXX \\ % FIXME
+               & XXX                            & XXX \\
+               & XXX                            & XXX \\
+               & XXX                            & XXX \\
+               & XXX                            & XXX \\
+               & XXX                            & XXX \\
+               & XXX                            & XXX \\
+\end{tabular}\\
+\phantom{.} \\
+Faculteit der Natuurwetenschappen, Wiskunde en Informatica % FIXME
+\clearpage
+} % Back to \pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%END of FRONT MATTER%%%%%%%%%%%%%%%%%%%%%%%%%%%
