@@ -343,6 +343,8 @@
    \endlist
 }
 
+\newcommand{\MakeMarkcase}[1]{#1}%    No uppercased headings with biblatex
+
 \renewenvironment{theindex}{%
    \cleardoublepage%                               Start on a right-hand page
    \if@twocolumn
