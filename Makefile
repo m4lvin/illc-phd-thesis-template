@@ -48,7 +48,7 @@ check:
 	tools/check_repeats 95_abstract.tex
 	tools/check_repeats bibliography.bib
 
-dsurl = https://www.illc.uva.nl/PhDProgramme/current-candidates/other/Latexhelp/ILLCDiss/illcdissertations.tex
+dsurl = https://phdprogramme.illc.uva.nl/Latexhelp/illcdiss/illcdissertations.tex
 
 update-illcdissertations.tex:
 	wget $(dsurl) -O illcdissertations.tex
