@@ -40,6 +40,12 @@
 \setcounter{biburllcpenalty}{9000}  % lower case
 \setcounter{biburlucpenalty}{9000}  % upper case
 
+% Remove the "URL: " prefix
+\DeclareFieldFormat{url}{\url{#1}}
+
+% Crossref Display Guidelines (March 2017), retrieved 2020-09-14, https://doi.org/10.13003/5jchdy
+\DeclareFieldFormat{doi}{\url{https://doi.org/#1}}
+
 \addbibresource{bibliography.bib}
 
 % load hyperref as the last package to make it compatible with others!
